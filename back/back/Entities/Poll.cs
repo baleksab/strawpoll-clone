@@ -6,12 +6,12 @@ namespace Entities;
 public class Poll
 {
     [Key]
-    public class PollId;
+    public int PollId { get; set; }
 
     [Required]
-    public string Title;
-    
-    public DateTime closeDate { get; set; }
+    public string Title { get; set; }
+
+    public DateTime CloseDate { get; set; }
     public bool AllowComments { get; set; }
     
     [Required]

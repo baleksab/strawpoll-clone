@@ -1,8 +1,8 @@
 using System.ComponentModel.DataAnnotations;
-
+using System.ComponentModel.DataAnnotations.Schema;
 namespace Entities;
 
-public class ImagesSettings
+public class ImageSettings
 {
     [Key]
     [ForeignKey("Poll")]

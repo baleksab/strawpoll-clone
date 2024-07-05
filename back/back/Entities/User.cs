@@ -5,11 +5,11 @@ namespace Entities;
 public class User
 {
     [Required]
-    public string UserId { get; set; }
+    public int UserId { get; set; }
 
     [Required]
     [MaxLength(100)]
-    public int RankValue { get; set; }
+    public string Username { get; set; }
 
     [Required]
     [EmailAddress]
