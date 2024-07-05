@@ -1,10 +1,9 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace StrawpollCloneBackend.Entities
+namespace Entities;
+
+public class MeetingOption : Options
 {
-    public class MeetingOption : Options
-    {
-        public DateTime MeetingTime { get; set; }
-    }
+    public DateTime MeetingTime { get; set; }
 }

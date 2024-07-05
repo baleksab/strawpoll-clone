@@ -1,17 +1,16 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace StrawpollCloneBackend.Entities
+namespace Entities;
+
+public class Options
 {
-    public class Options
-    {
-        [Key]
-        public int OptionId { get; set; }
+    [Key]
+    public int OptionId { get; set; }
 
-        [ForeignKey("Poll")]
-        public int PollId { get; set; }
-        public Poll Poll { get; set; }
-
-        [Required]
-        public OptionType OptionType { get; set; }
-    }
+    [ForeignKey("Poll")]
+    public int PollId { get; set; }
+    public Poll Poll { get; set; }
+    
+    [Required]
+    public OptionType OptionType { get; set; }
 }

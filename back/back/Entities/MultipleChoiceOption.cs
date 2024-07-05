@@ -1,10 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace StrawpollCloneBackend.Entities
+namespace Entities;
+
+public class MultipleChoiceOption : Options
 {
-    public class MultipleChoiceOption : Options
-    {
-        [Required]
-        public string OptionText { get; set; }
-    }
+    [Required]
+    public string OptionText { get; set; }
 }

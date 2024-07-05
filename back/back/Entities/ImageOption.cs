@@ -1,10 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace StrawpollCloneBackend.Entities
+namespace Entities;
+
+public class ImageOption : Options
 {
-    public class ImageOption : Options
-    {
-        [Required]
-        public string OptionImageUrl { get; set; }
-    }
+    [Required]
+    public string OptionImageUrl { get; set; }
 }
