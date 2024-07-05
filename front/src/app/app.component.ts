@@ -1,19 +1,12 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements AfterViewInit {
-  title: string = 'front';
+export class AppComponent {
 
-  @ViewChild('test') testDiv!: ElementRef;
-
-  ngAfterViewInit(): void {
-    console.log(this.testDiv.nativeElement.innerHTML);
-  }
 }
